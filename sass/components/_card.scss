@@ -1,4 +1,6 @@
 .card {
+
+    //FUNCTIONALITY
     perspective: 150rem;
     -moz-perspective: 150rem;
     position: relative;
@@ -18,6 +20,8 @@
         -moz-backface-visibility: hidden;
         // corner
         border-radius: 3px;
+
+        overflow: hidden;
         box-shadow: $default-shadow;
 
 
@@ -55,7 +59,24 @@
         transform: rotateY(0);
     }
 
+    //FRONT SIDE STYLING
+    &__picture {
+        background-size: cover;
+        height: 23rem;
+        background-blend-mode: screen;
 
+        &--1 {
+            background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark), url(../img/nat-5.jpg);
+        }
 
+        &--2 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+        &--3 {
+            background-image: url(../img/nat-5.jpg);
+        }
+
+    }
 
 }
