@@ -172,6 +172,14 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   transform: translateY(0); }
 
+.card {
+  background-color: orangered;
+  height: 50rem;
+  transition: all 3s;
+  perspective: 150rem; }
+  .card:hover {
+    transform: rotateY(180deg); }
+
 .composition {
   position: relative; }
   .composition__photo {
@@ -249,19 +257,19 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 0rem; }
+      margin-right: 6rem; }
   .row .col-1-of-2 {
-    width: calc((100%-0rem)/2); }
+    width: calc((100% - 6rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100%-2 * 0rem)/3); }
+    width: calc((100% - 2 * 6rem)/3); }
   .row .col-2-of-3 {
-    width: calc(2*((100%-2 * 0rem)/3) + 0rem); }
+    width: calc(2*((100% - 2 * 6rem)/3) + 6rem); }
   .row .col-1-of-4 {
-    width: calc((100%-3 * 0rem)/4); }
+    width: calc((100% - 3 * 6rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100%-3 * 0rem)/4) + 0rem); }
+    width: calc(2 * ((100% - 3 * 6rem)/4) + 6rem); }
   .row .col-3-of-4 {
-    width: calc(3 * ((100%-3 * 0rem)/4) + 2 * 0rem); }
+    width: calc(3 * ((100% - 3 * 6rem)/4) + 2 * 6rem); }
 
 .section-about {
   background-color: #f7f7f7;
@@ -276,3 +284,8 @@ body {
   margin-top: -10rem; }
   .section-features > * {
     transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
